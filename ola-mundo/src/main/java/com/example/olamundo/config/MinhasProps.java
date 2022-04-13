@@ -1,4 +1,4 @@
-package com.example.serviceconfig.config;
+package com.example.olamundo.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

@@ -1,9 +1,9 @@
-package com.example.serviceconfig.exception.handler;
+package com.example.olamundo.exception.handler;
 
 import java.util.Date;
 
-import com.example.serviceconfig.exception.ExceptionResponse;
-import com.example.serviceconfig.exception.NegocioException;
+import com.example.olamundo.exception.ExceptionResponse;
+import com.example.olamundo.exception.NegocioException;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

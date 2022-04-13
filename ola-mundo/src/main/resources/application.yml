@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ola-mundo
+  config:
+    import:
+    - optional:configserver:http://localhost:8888/
+  cloud:
+    config:
+      profile: prod
+server:
+  port: 8080
+
+# minhas-props:
+#   prop1: teste1
+#   prop2: teste2

@@ -1,9 +1,9 @@
-package com.example.serviceconfig.controller;
+package com.example.olamundo.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.serviceconfig.config.MinhasProps;
-import com.example.serviceconfig.exception.NegocioException;
+import com.example.olamundo.config.MinhasProps;
+import com.example.olamundo.exception.NegocioException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

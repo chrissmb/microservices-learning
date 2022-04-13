@@ -1,0 +1,7 @@
+
+spring:
+  application:
+    name: ola-mundo
+minhas-props:
+  prop1: teste1
+  prop2: teste2

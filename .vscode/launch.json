@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch OlaMundoApplication",
+            "request": "launch",
+            "mainClass": "com.example.olamundo.OlaMundoApplication",
+            "projectName": "ola-mundo"
+        },
+        {
+            "type": "java",
             "name": "Launch ServiceConfigApplication",
             "request": "launch",
             "mainClass": "com.example.serviceconfig.ServiceConfigApplication",

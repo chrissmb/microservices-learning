@@ -1,4 +1,4 @@
-package com.example.serviceconfig.exception;
+package com.example.olamundo.exception;
 
 import java.util.Date;
 

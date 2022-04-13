@@ -1,8 +1,8 @@
 spring:
   application:
     name: service-config
+  profiles:
+    active:
+    - native
 server:
-  port: 8080
-minhas-props:
-  prop1: teste1
-  prop2: teste2
+  port: 8888
