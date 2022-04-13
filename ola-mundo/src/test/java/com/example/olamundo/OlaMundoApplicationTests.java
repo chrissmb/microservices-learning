@@ -1,12 +1,10 @@
-package com.example.serviceconfig;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+package com.example.olamundo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ServiceConfigApplicationTests {
+class OlaMundoApplicationTests {
 
 	@Test
 	void contextLoads() {
