@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CambioServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.cambioservice.CambioServiceApplication",
+            "projectName": "cambio-service"
+        },
+        {
+            "type": "java",
             "name": "Launch OlaMundoApplication",
             "request": "launch",
             "mainClass": "com.example.olamundo.OlaMundoApplication",
