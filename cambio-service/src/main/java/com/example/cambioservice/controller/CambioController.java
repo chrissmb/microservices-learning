@@ -29,10 +29,8 @@ public class CambioController {
             @PathVariable BigDecimal amount,
             @PathVariable String from,
             @PathVariable String to) {
-        Cambio cambio = cambioRepository.findByFromAndTo(from, to);
-        if (cambio == null) {
-            throw new RuntimeException("Cambio not found.");
-        }
+        Cambio cambio = cambioRepository.findByFromAndTo(from, to).orElseThrow(
+                () -> new RuntimeException("Cambio not found."));
         String port = environment.getProperty("local.server.port");
         cambio.setConvertedValue(amount.multiply(cambio.getConvertionFactor()));
         cambio.setEnvironment(port);

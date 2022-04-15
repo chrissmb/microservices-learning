@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BookServiceApplication",
+            "request": "launch",
+            "mainClass": "com.example.bookservice.BookServiceApplication"
+        },
+        {
+            "type": "java",
             "name": "Launch CambioServiceApplication",
             "request": "launch",
             "mainClass": "com.example.cambioservice.CambioServiceApplication",
@@ -24,6 +30,17 @@
             "request": "launch",
             "mainClass": "com.example.serviceconfig.ServiceConfigApplication",
             "projectName": "service-config"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-BookServiceApplication<book-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.bookservice.BookServiceApplication",
+            "projectName": "book-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
