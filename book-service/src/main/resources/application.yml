@@ -41,7 +41,7 @@ resilience4j:
         wait-duration: 1s
         enable-exponential-backoff: true
 springdoc:
-  show-actuator: true
+  show-actuator: false
   api-docs:
     path: book/v3/api-docs
 # liberar os endpoints no actuator:
