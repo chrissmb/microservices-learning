@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch NamingServerApplication",
+            "request": "launch",
+            "mainClass": "com.example.namingserver.NamingServerApplication",
+            "projectName": "naming-server"
+        },
+        {
+            "type": "java",
             "name": "Launch BookServiceApplication",
             "request": "launch",
             "mainClass": "com.example.bookservice.BookServiceApplication"

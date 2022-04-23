@@ -4,19 +4,18 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 import com.example.bookservice.model.Book;
 import com.example.bookservice.proxy.CambioProxy;
 import com.example.bookservice.repository.BookRepository;
 import com.example.bookservice.response.Cambio;
 
-import io.github.resilience4j.retry.annotation.Retry;
-
+@CrossOrigin("http://localhost:8765")
 @RestController
 @RequestMapping("book")
 public class BookController {
@@ -45,13 +44,13 @@ public class BookController {
     }
     
 	@GetMapping(value = "/foo-bar")
-	@Retry(name = "foo-bar", fallbackMethod = "fallbackMethod")
+//	@Retry(name = "foo-bar", fallbackMethod = "fallbackMethod")
 //	@CircuitBreaker(name = "default", fallbackMethod = "fallbackMethod")
 //	@RateLimiter(name = "default")
 //	@Bulkhead(name = "default")
 	public String getFooBar() {
 		log.info("Request getFooBar.");
-		var resp = new RestTemplate().getForEntity("http://192.168.50.1/errar", String.class);
+		//var resp = new RestTemplate().getForEntity("http://192.168.50.1/errar", String.class);
 		return "foo-bar";
 	}
 	
